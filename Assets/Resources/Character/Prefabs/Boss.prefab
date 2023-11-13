@@ -42,10 +42,10 @@ GameObject:
   - component: {fileID: 840080145437362559}
   - component: {fileID: 6306319907162591428}
   - component: {fileID: 6702106012032024518}
-  - component: {fileID: 7907925520027276703}
   - component: {fileID: 251472540384175319}
   - component: {fileID: 7581861617057520237}
   - component: {fileID: 1763724068735234483}
+  - component: {fileID: 5193789871845806612}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Monster
@@ -121,29 +121,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7907925520027276703
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3558896579201974542}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &251472540384175319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +143,16 @@ MonoBehaviour:
   damage_r: {fileID: 0}
   flag_r: 0
   time1: 0
+  time2: 10
+  time3: 15
   text_r: {fileID: 0}
+  text_skill: {fileID: 0}
+  berserker_ui: {fileID: 0}
+  archer_ui: {fileID: 0}
+  loading_berserker: {fileID: 0}
+  loading_berserker_b: {fileID: 0}
+  loading_archer: {fileID: 0}
+  loading_archer_b: {fileID: 0}
   healthBarImage: {fileID: 0}
   originalPosition: {fileID: 3558896579201974542}
   randomRange: 0.5
@@ -298,6 +284,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &5193789871845806612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558896579201974542}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9517984, y: 1.1368718, z: 0.5113861}
+  m_Center: {x: 0.000000059604645, y: 0, z: 0}
 --- !u!1 &6617603622326325152
 GameObject:
   m_ObjectHideFlags: 0
