@@ -306,12 +306,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 30
   time_1: 0
+  time_2: 0
   player: {fileID: 910253959567621786}
   enemy: {fileID: 6030840944028162394}
   enemy_x: 0
   enemy_y: 0
+  enemy_z: 0
   player_x: 0
   player_y: 0
+  player_z: 0
   speed: 1
   target: {fileID: 6124056403614315623}
 --- !u!1 &5357101476368378558

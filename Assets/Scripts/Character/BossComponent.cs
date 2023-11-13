@@ -37,6 +37,8 @@ public class BossComponent : MonoBehaviour
 
     public GameObject originalPosition; // 原始位置
 
+    public GameObject arrow;
+
     public float randomRange = 0.5f; // 随机位置的范围 
     public float randomYRangea = 2f; // 随机Y位置的范围a
     public float randomYRangeb = 3f; // 随机Y位置的范围b
@@ -208,6 +210,18 @@ public class BossComponent : MonoBehaviour
         {
             Debug.Log("攻击伤害：" + CharacterDamage);
             TakeDamage(CharacterDamage);
+        }
+        if (collision.GetComponent<Arrow>() != null)
+        {
+            Debug.Log("攻击伤害arrow：" + CharacterDamage/4);
+            GlobalData.Instance.pos_flag = false;
+            GlobalData.Instance.done_flag = false;
+            GlobalData.Instance.x = -10f;
+            GlobalData.Instance.y = -10f;
+            GlobalData.Instance.z = -10f;
+            arrow.transform.position = new Vector3(-10f, -10f, -10f);
+            TakeDamage(CharacterDamage/4);//出现4次，暂且搁置
+           
         }
     }
 
