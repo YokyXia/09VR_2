@@ -35,6 +35,15 @@ public class GlobalData
 
     public int lb { get; set; } = 100;
 
+    public float x { get; set; } = -10f;
+
+    public float y { get; set; } = -10f;
+
+    public float z { get; set; } = -10f;
+
+    public bool pos_flag { get; set; } = false;
+
+    public bool done_flag { get; set;} = false;
 
 
 
