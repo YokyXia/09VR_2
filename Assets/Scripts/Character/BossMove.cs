@@ -55,18 +55,20 @@ public class BossMove : MonoBehaviour
                 }
             }
         }
+        //Í£×ß
+        //if(flag!=currentWaypointIndex)
+        //{
+        //    speed = 0f;
+        //    time += Time.deltaTime;
+        //    if (time > 1)
+        //    {
+        //        flag = currentWaypointIndex;
+        //        speed = 1f;
+        //        time = 0f;
+        //    }
+        //}
 
-        if(flag!=currentWaypointIndex)
-        {
-            speed = 0f;
-            time += Time.deltaTime;
-            if (time > 1)
-            {
-                flag = currentWaypointIndex;
-                speed = 1f;
-                time = 0f;
-            }
-        }
+
         //if (flag == currentWaypointIndex)
         //{
         //    speed = 0f;
