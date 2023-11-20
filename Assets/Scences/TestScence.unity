@@ -14622,6 +14622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 3558896579201974542, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
+      propertyPath: m_TagString
+      value: MonsterFlag
+      objectReference: {fileID: 0}
     - target: {fileID: 7907925520027276703, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
       propertyPath: m_IsTrigger
       value: 0
