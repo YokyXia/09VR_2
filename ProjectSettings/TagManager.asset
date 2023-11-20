@@ -9,6 +9,7 @@ TagManager:
   - Monster
   - FxTemporaire
   - Projectile
+  - MonsterFlag
   layers:
   - Default
   - TransparentFX
