@@ -14626,6 +14626,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MonsterFlag
       objectReference: {fileID: 0}
+    - target: {fileID: 5193789871845806612, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
+      propertyPath: m_Size.x
+      value: 3.926097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193789871845806612, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
+      propertyPath: m_Size.y
+      value: 5.202525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193789871845806612, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
+      propertyPath: m_Center.x
+      value: 0.06915407
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193789871845806612, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
+      propertyPath: m_Center.y
+      value: -0.1755172
+      objectReference: {fileID: 0}
     - target: {fileID: 6306319907162591428, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -14671,8 +14687,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9517984, y: 1.1368718, z: 0.5113861}
-  m_Center: {x: 0.000000059604645, y: 0, z: 0}
+  m_Size: {x: 3.9260972, y: 5.2025247, z: 0.5113861}
+  m_Center: {x: 0.06915407, y: -0.17551717, z: 0}
 --- !u!1001 &6461192375356501625
 PrefabInstance:
   m_ObjectHideFlags: 0
