@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.080251165, g: 0.0996422, b: 0.30103904, a: 1}
+  m_IndirectSpecularColor: {r: 0.08027503, g: 0.09966409, b: 0.30106682, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4907,7 +4907,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 4, y: 4, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &760289178
 MeshRenderer:
@@ -4968,8 +4968,8 @@ Transform:
   m_GameObject: {fileID: 760289176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.29084414, z: 0, w: 0.9567705}
-  m_LocalPosition: {x: 2.1, y: 0.662, z: 4.27}
-  m_LocalScale: {x: 0.71292186, y: 0.49347848, z: 0.4278}
+  m_LocalPosition: {x: 2.1, y: 0.736, z: 4.27}
+  m_LocalScale: {x: 1.3499175, y: 0.49347848, z: 0.4278}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5220,7 +5220,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 4, y: 4, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &804339749
 MeshRenderer:
@@ -5280,13 +5280,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804339747}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.35621607, z: 0, w: 0.93440366}
-  m_LocalPosition: {x: -2.38, y: 0.65, z: 4.5}
-  m_LocalScale: {x: 0.71292186, y: 0.49347848, z: 0.4278}
+  m_LocalRotation: {x: 0, y: -0.503774, z: 0, w: 0.8638356}
+  m_LocalPosition: {x: -2.281, y: 0.687, z: 4.369}
+  m_LocalScale: {x: 1.2185974, y: 0.49347848, z: 0.4278}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.736, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -60.5, z: 0}
 --- !u!114 &804339752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11825,7 +11825,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985249787}
   m_LocalRotation: {x: 0, y: 0.27813625, z: 0, w: 0.96054167}
-  m_LocalPosition: {x: 0, y: 0, z: 0.126}
+  m_LocalPosition: {x: 0, y: 0, z: 0.48}
   m_LocalScale: {x: 0.010041322, y: 0.001968483, z: 0.010041322}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11833,7 +11833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 32.298, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.693, y: -1}
+  m_AnchoredPosition: {x: 2.11, y: -1.082}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1985249789
