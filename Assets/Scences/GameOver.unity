@@ -2610,13 +2610,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 30
-  time1: 0
+  time_1: 0
+  time_2: 0
   player: {fileID: 1977846970}
   enemy: {fileID: 5889636747461496606}
   enemy_x: 0
   enemy_y: 0
+  enemy_z: 0
   player_x: 0
   player_y: 0
+  player_z: 0
   speed: 1
   target: {fileID: 1668164238}
 --- !u!1 &1977942916
@@ -3378,7 +3381,7 @@ PrefabInstance:
       objectReference: {fileID: 1977846978}
     - target: {fileID: 3058423512092632487, guid: 67c68e8c72dca8745b2349d4674af16a, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3058423512092632487, guid: 67c68e8c72dca8745b2349d4674af16a, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -3588,7 +3591,7 @@ PrefabInstance:
       objectReference: {fileID: 2117235967}
     - target: {fileID: 4875277214777113061, guid: 0e97af2a7e471ad4cb3491193e119898, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4875277214777113061, guid: 0e97af2a7e471ad4cb3491193e119898, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

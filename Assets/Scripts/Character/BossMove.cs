@@ -18,13 +18,13 @@ public class BossMove : MonoBehaviour
         Transform currentWaypoint = waypoints[currentWaypointIndex];
 
         // 计算物体朝向运动点的方向
-        Vector3 direction = -(currentWaypoint.position - transform.position).normalized;
+        Vector3 direction =(currentWaypoint.position - transform.position).normalized;
 
         // 计算物体朝向运动方向的旋转角度
         Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
 
         // 将物体的x轴负方向设置为运动方向
-        boss.transform.rotation = Quaternion.Euler(-targetRotation.eulerAngles.x, -targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
+        boss.transform.rotation = Quaternion.Euler(targetRotation.eulerAngles.x, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
 
         // 计算物体的下一步位置
         Vector3 nextPosition = Vector3.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
@@ -56,17 +56,17 @@ public class BossMove : MonoBehaviour
             }
         }
         //停走
-        //if(flag!=currentWaypointIndex)
-        //{
-        //    speed = 0f;
-        //    time += Time.deltaTime;
-        //    if (time > 1)
-        //    {
-        //        flag = currentWaypointIndex;
-        //        speed = 1f;
-        //        time = 0f;
-        //    }
-        //}
+        if (flag != currentWaypointIndex)
+        {
+            speed = 0f;
+            time += Time.deltaTime;
+            if (time > 1)
+            {
+                flag = currentWaypointIndex;
+                speed = 1f;
+                time = 0f;
+            }
+        }
 
 
         //if (flag == currentWaypointIndex)

@@ -53,6 +53,8 @@ public class BossComponent : MonoBehaviour
 
     private AudioSource audioSource; // 获得音效组件
 
+    public AudioSource audioSource_Begin; // 获得音效组件
+
     private ParticleSystem hitParticle; // 获得受击特效
 
     void Start()
@@ -65,6 +67,7 @@ public class BossComponent : MonoBehaviour
 
         //PlayHitParticles(); // 播放特效测试
         //PlayHitSound(); // 播放音效测试
+        PlayStartSound();
     }
 
     void Update()
@@ -279,6 +282,18 @@ public class BossComponent : MonoBehaviour
 
         // 播放特效
         hitParticle.GetComponent<ParticleSystem>().Play();
+    }
+
+    /// <summary>
+    /// 播放音效
+    /// </summary>
+    public void PlayStartSound()
+    {
+        // 获取音频源组件 
+      //  audioSource_Begin = GetComponent<AudioSource>();
+
+        // 播放音效  
+        audioSource_Begin.Play();
     }
 }
 
