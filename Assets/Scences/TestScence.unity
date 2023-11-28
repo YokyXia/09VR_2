@@ -13419,7 +13419,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &1745919472
 SphereCollider:
@@ -13440,7 +13440,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1745919473
 MeshRenderer:
@@ -13491,7 +13491,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745919469}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 8906563331131944060, guid: 512fdf609079e3d488e79332ed11014a, type: 3}
 --- !u!4 &1745919475
 Transform:
   m_ObjectHideFlags: 0
@@ -13502,8 +13502,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10, y: -10, z: -10}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14542,6 +14542,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d59133509f424e849b6d63b76ed0cad2, type: 3}
+--- !u!1 &1967665344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5674738269617583016, guid: 67c68e8c72dca8745b2349d4674af16a, type: 3}
+  m_PrefabInstance: {fileID: 4104162771438838795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1972505785
 GameObject:
   m_ObjectHideFlags: 0
@@ -14645,6 +14650,7 @@ MonoBehaviour:
   player_x: 0
   player_y: 0
   player_z: 0
+  effectPrefabA: {fileID: 1967665344}
   speed: 1
   target: {fileID: 1668164238}
 --- !u!1 &1977942916
