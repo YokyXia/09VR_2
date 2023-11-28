@@ -23,7 +23,7 @@ public class TryAgain : MonoBehaviour
             GlobalData.Instance.lb = 100;
             GlobalData.Instance.berserker = false;
             GlobalData.Instance.archer = false;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
    
     }
