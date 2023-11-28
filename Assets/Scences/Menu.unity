@@ -12566,7 +12566,7 @@ PrefabInstance:
       objectReference: {fileID: 1977846978}
     - target: {fileID: 3058423512092632487, guid: 67c68e8c72dca8745b2349d4674af16a, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3058423512092632487, guid: 67c68e8c72dca8745b2349d4674af16a, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -12698,7 +12698,7 @@ PrefabInstance:
       objectReference: {fileID: 2117235967}
     - target: {fileID: 4875277214777113061, guid: 0e97af2a7e471ad4cb3491193e119898, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4875277214777113061, guid: 0e97af2a7e471ad4cb3491193e119898, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
