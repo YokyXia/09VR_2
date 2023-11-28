@@ -10,13 +10,10 @@ public class Berserker : MonoBehaviour
     public int cost = 40;
     public float time1 = 0f;
     public GameObject effectPrefab; // 特效预制件
-    private bool shouldTriggerEffect = false; // 触发特效的条件
+    //private bool shouldTriggerEffect = false; // 触发特效的条件
 
 
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -31,6 +28,11 @@ public class Berserker : MonoBehaviour
         //        Debug.Log("berserker off");
         //    }
         //}
+
+        if (GlobalData.Instance.berserker == false)
+        {
+            effectPrefab.SetActive(false);
+        }
     }
 
     public void intensify()
@@ -39,7 +41,8 @@ public class Berserker : MonoBehaviour
         {
             GlobalData.Instance.lb-=cost;
             GlobalData.Instance.berserker = true;
-            shouldTriggerEffect = true; // 设置为触发特效的条件
+            effectPrefab.SetActive(true);
+            //shouldTriggerEffect = true; // 设置为触发特效的条件
 
             Debug.Log("berserker on");
         }
