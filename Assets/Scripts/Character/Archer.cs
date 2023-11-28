@@ -19,7 +19,7 @@ public class Archer : MonoBehaviour
     public float player_z;
     private Vector3 targetPosition = new Vector3(0.061f, 0.298f, 1.908f);
 
-    public GameObject effectPrefab; // 特效预制件
+    public GameObject effectPrefabA; // 特效预制件
 
     //public GameObject arrow;
     //private float x=-10;
@@ -30,18 +30,11 @@ public class Archer : MonoBehaviour
     public float speed = 20f;  //  移动速度
     public Transform target;  //  目标位置
     private Rigidbody rb;  //  物体的刚体组件
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
     {
-        if (GlobalData.Instance.archer == false)
-        {
-            effectPrefab.SetActive(false);
-        }
 
 
         //if (GlobalData.Instance.archer == true)
@@ -55,7 +48,13 @@ public class Archer : MonoBehaviour
         //    }
         //}
 
+        //if (GlobalData.Instance.archer == false)
+        //{
+        //    effectPrefabA.SetActive(false);
+        //}
+
         if (GlobalData.Instance.archer == true)
+
         {
             Debug.Log("判定到了1");
           //  enemy_x = enemy.transform.position.x;
@@ -121,6 +120,7 @@ public class Archer : MonoBehaviour
                 }
                 
             }
+
         }
     }
 
@@ -130,7 +130,7 @@ public class Archer : MonoBehaviour
         {
             GlobalData.Instance.lb -= cost;
             GlobalData.Instance.archer = true;
-            effectPrefab.SetActive(true);
+            effectPrefabA.SetActive(true);
             Debug.Log("archer on");
         }
     }

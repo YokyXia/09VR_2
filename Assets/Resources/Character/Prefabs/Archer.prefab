@@ -317,7 +317,7 @@ MonoBehaviour:
   player_x: 0
   player_y: 0
   player_z: 0
-  effectPrefab: {fileID: 0}
+  effectPrefabA: {fileID: 5674738269617583016}
   speed: 1
   target: {fileID: 6124056403614315623}
 --- !u!1 &5357101476368378558
@@ -530,6 +530,11 @@ PrefabInstance:
 --- !u!4 &4819236332759657597 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8029142899459995171, guid: 97c43495f80a3244fad1301dfafbe252, type: 3}
+  m_PrefabInstance: {fileID: 3282107097342417502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5674738269617583016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7155335147208632822, guid: 97c43495f80a3244fad1301dfafbe252, type: 3}
   m_PrefabInstance: {fileID: 3282107097342417502}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7966540382671161503
