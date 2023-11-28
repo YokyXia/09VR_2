@@ -48,10 +48,10 @@ public class Archer : MonoBehaviour
         //    }
         //}
 
-        //if (GlobalData.Instance.archer == false)
-        //{
-        //    effectPrefabA.SetActive(false);
-        //}
+        if (GlobalData.Instance.archer == false)
+        {
+            effectPrefabA.SetActive(false);
+        }
 
         if (GlobalData.Instance.archer == true)
 
