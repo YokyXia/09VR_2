@@ -14576,7 +14576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.167, y: 0.988}
+  m_AnchoredPosition: {x: 0.167, y: 1.075}
   m_SizeDelta: {x: 1.3039, y: 0.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1972505787
@@ -16451,7 +16451,7 @@ PrefabInstance:
     - target: {fileID: 1763724068735234483, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6e6d9fb3fb184df47a13e6a305c56e08, type: 3}
+      objectReference: {fileID: 8300000, guid: 127a2d0b5f551fa4280cadad5ac24e52, type: 3}
     - target: {fileID: 3558896579201974542, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
       propertyPath: m_Name
       value: Boss
@@ -16479,7 +16479,7 @@ PrefabInstance:
     - target: {fileID: 6306319907162591428, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 6323516335006253108, guid: f4c384e0dbc4d5841bdb746017499020, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7907925520027276703, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -16490,7 +16490,8 @@ PrefabInstance:
       objectReference: {fileID: 1181233728}
     m_RemovedComponents:
     - {fileID: 7907925520027276703, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4381668898987516368, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3558896579201974542, guid: 4904bdbe53574534b8ffc6dd6018b7dc, type: 3}
