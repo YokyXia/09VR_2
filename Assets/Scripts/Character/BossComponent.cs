@@ -22,6 +22,7 @@ public class BossComponent : MonoBehaviour
     public float time1 = 0f;
     public float time2 = 10f;
     public float time3 = 15f;
+    public float time4 = 10f;
     public TextMeshProUGUI text_r;
     public TextMeshProUGUI text_skill;
   //  public GameObject text_skill2;
@@ -36,6 +37,10 @@ public class BossComponent : MonoBehaviour
     //public Image loading_b;
 
     public GameObject originalPosition; // 原始位置
+
+    public GameObject sage_ui;
+    public Image loading_sage;
+    public Image loading_sage_b;
 
     public GameObject arrow;
 
@@ -56,6 +61,11 @@ public class BossComponent : MonoBehaviour
     public AudioSource audioSource_Begin; // 获得音效组件
 
     private ParticleSystem hitParticle; // 获得受击特效
+
+    public GameObject boss;
+
+
+
 
     void Start()
     {
@@ -125,12 +135,34 @@ public class BossComponent : MonoBehaviour
         {
             text_skill.text = "";
         }
+
+        if (GlobalData.Instance.sage)
+        {
+
+            time4 -= Time.deltaTime;
+            // text_skill2.SetActive(true);
+          //  text_skill.text = "Archer: " + (int)time4;
+            sage_ui.SetActive(true);
+            loading_sage.fillAmount = time4 / 10f;
+            if (time4 <= 0)
+            {
+                GlobalData.Instance.sage = false;
+                Debug.Log("sage off");
+            }
+        }
+        else
+        {
+            time4 = 10f;
+            sage_ui.SetActive(false);
+        }
     }
 
     public void TakeDamage(float damage)
     {
         PlayHitSound(); // 播放受击音效
-        PlayHitParticles(); // 播放受击特效
+                        PlayHitParticles(); // 播放受击特效
+       // playBossAnimation();
+
 
         float actuallDamage = damage - defensePower;
         if(actuallDamage <= 0)
@@ -186,7 +218,7 @@ public class BossComponent : MonoBehaviour
             {
             if (GlobalData.Instance.berserker)
             {
-                Debug.Log("攻击伤害：" + berserker_on);
+                Debug.Log("bb攻击伤害：" + berserker_on);
                 damage_r.SetActive(true);
                 flag_r = true;
                 TakeDamage(berserker_on);
@@ -278,7 +310,7 @@ public class BossComponent : MonoBehaviour
         GameObject hitParticle = Instantiate( Resources.Load<GameObject>("Art/VFX/CFX_Explosion_B_Smoke+Text") );  // 从资源中加载特效预设        
 
         // 设置特效位置
-        hitParticle.transform.parent = GameObject.Find("Boss").transform;
+        hitParticle.transform.position = boss.transform.position;
 
         // 播放特效
         hitParticle.GetComponent<ParticleSystem>().Play();
@@ -295,5 +327,10 @@ public class BossComponent : MonoBehaviour
         // 播放音效  
         audioSource_Begin.Play();
     }
+
+    //public void playBossAnimation()
+    //{
+    //    Instantiate(bossAnimation, bossAnimation.transform.position, Quaternion.identity);
+    //}
 }
 

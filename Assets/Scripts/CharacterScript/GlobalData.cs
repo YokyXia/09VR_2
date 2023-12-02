@@ -45,6 +45,8 @@ public class GlobalData
 
     public bool done_flag { get; set;} = false;
 
+    public bool sage { get; set; } = false;
+
 
 
 
