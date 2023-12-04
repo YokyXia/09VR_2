@@ -29,7 +29,7 @@ public class Berserker : MonoBehaviour
         //    }
         //}
 
-        if (GlobalData.Instance.berserker == false)
+        if (GlobalData.Instance.berserker == false && effectPrefab!=null)
         {
             effectPrefab.SetActive(false);
         }

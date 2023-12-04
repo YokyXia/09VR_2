@@ -48,7 +48,7 @@ public class Archer : MonoBehaviour
         //    }
         //}
 
-        if (GlobalData.Instance.archer == false)
+        if (GlobalData.Instance.archer == false && effectPrefabA != null)
         {
             effectPrefabA.SetActive(false);
         }
@@ -68,7 +68,7 @@ public class Archer : MonoBehaviour
             if(player.transform.position.z > 2.498f || player.transform.position.x < -2.64f || player.transform.position.x >2.23f)
             {
                 Debug.Log("≈–∂®µΩ¡À2");
-                if(GlobalData.Instance.archer == true)
+                if(GlobalData.Instance.archer == true && !GlobalData.Instance.pos_flag)
                 {
                     GetComponent<Rigidbody>().isKinematic = true;
                 }

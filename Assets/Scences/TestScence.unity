@@ -16311,6 +16311,10 @@ PrefabInstance:
       propertyPath: spawnCharacter
       value: 
       objectReference: {fileID: 690949082}
+    - target: {fileID: 8317789685624222751, guid: c4bc7e7f26b93d4448e2cd737223b04e, type: 3}
+      propertyPath: cost
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

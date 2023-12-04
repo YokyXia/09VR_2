@@ -16,7 +16,7 @@ public class Sage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GlobalData.Instance.sage)
+        if (!GlobalData.Instance.sage && effectPrefabA != null)
         {
             effectPrefabA.SetActive(false);
         }

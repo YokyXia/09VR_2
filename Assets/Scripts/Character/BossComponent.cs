@@ -177,13 +177,16 @@ public class BossComponent : MonoBehaviour
             GlobalData.Instance.archer = false;
             GlobalData.Instance.berserker = false;
             GlobalData.Instance.sage = false;
-            time5 += Time.deltaTime;
-            if(time5 > 0.5f)
-            {
+          //  time5 += Time.deltaTime;
+          //  Debug.Log("time5:"+ time5);
+
+          //  if(time5 > 0.5f)
+         //   {
+                Debug.Log("4444");
                 win.SetActive(true);
                 SceneManager.LoadScene(3);
-                time5 = 0f;
-            }
+         //       time5 = 0f;
+         //   }
 
         }
 

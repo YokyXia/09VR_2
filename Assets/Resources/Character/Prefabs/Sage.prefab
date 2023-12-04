@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0f0e01886fed241abcf8d4c9cb5486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 30
+  cost: 0
   feedback: 40
   effectPrefabA: {fileID: 6060774174521463232}
 --- !u!1 &4062858768838416021
