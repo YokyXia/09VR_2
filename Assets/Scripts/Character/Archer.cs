@@ -65,7 +65,7 @@ public class Archer : MonoBehaviour
            // player_z = player.transform.rotation.z;
             
            // if ((player_x - enemy_x) * (player_x - enemy_x) + (player_y - enemy_y) * (player_y - enemy_y)+ (player_z - enemy_z) * (player_z - enemy_z) < 1.2 * 1.2*1.2)
-            if(player.transform.position.z > 2.498f)
+            if(player.transform.position.z > 2.498f || player.transform.position.x < -2.64f || player.transform.position.x >2.23f)
             {
                 Debug.Log("≈–∂®µΩ¡À2");
                 if(GlobalData.Instance.archer == true)
