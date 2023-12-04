@@ -6,6 +6,7 @@ public class Sage : MonoBehaviour
 {
     public int cost = 30;
     public int feedback = 40;
+    public GameObject effectPrefabA; // 特效预制件
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,10 @@ public class Sage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!GlobalData.Instance.sage)
+        {
+            effectPrefabA.SetActive(false);
+        }
     }
     public void intensify()
     {
@@ -24,6 +28,7 @@ public class Sage : MonoBehaviour
             GlobalData.Instance.lb -= cost;
             GlobalData.Instance.lb += feedback;
             GlobalData.Instance.sage = true;
+            effectPrefabA.SetActive(true);
             Debug.Log("Sage on");
         }
     }
