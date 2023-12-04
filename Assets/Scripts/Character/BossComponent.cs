@@ -19,10 +19,11 @@ public class BossComponent : MonoBehaviour
     public GameObject win;
     public GameObject damage_r;
     public bool flag_r=false;
-    public float time1 = 0f;
-    public float time2 = 10f;
-    public float time3 = 15f;
-    public float time4 = 10f;
+    private float time1 = 0f;
+    private float time2 = 10f;
+    private float time3 = 15f;
+    private float time4 = 10f;
+    private float time5 = 0f;
     public TextMeshProUGUI text_r;
     public TextMeshProUGUI text_skill;
   //  public GameObject text_skill2;
@@ -173,8 +174,17 @@ public class BossComponent : MonoBehaviour
         UpdateHealthBar();
         if(currentHealth <= 0)
         {
-            win.SetActive(true);
-            SceneManager.LoadScene(3);
+            GlobalData.Instance.archer = false;
+            GlobalData.Instance.berserker = false;
+            GlobalData.Instance.sage = false;
+            time5 += Time.deltaTime;
+            if(time5 > 0.5f)
+            {
+                win.SetActive(true);
+                SceneManager.LoadScene(3);
+                time5 = 0f;
+            }
+
         }
 
         Debug.Log("·ÀÓù£º" + defensePower);
