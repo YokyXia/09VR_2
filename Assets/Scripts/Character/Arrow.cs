@@ -26,8 +26,16 @@ public class Arrow : MonoBehaviour
             float distance = direction.magnitude;
             if (distance > 0.1f)  // 当距离大于0.1时，继续飞行
             {
-                Vector3 move = direction.normalized * 1f * Time.deltaTime;
+                Vector3 move = direction.normalized * 5f * Time.deltaTime;
                 transform.Translate(move);
+                if (direction != Vector3.zero)
+                {
+                    // 使用LookRotation方法计算朝向目标的旋转
+                    Quaternion rotation = Quaternion.LookRotation(direction);
+
+                    // 应用旋转到GameObject
+                    transform.rotation = rotation;
+                }
             }
         }
         
