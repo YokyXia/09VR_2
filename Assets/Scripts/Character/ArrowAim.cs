@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class EnemyHealthBar : MonoBehaviour
+public class ArrowAim : MonoBehaviour
 {
     public Transform target; // 用来存储目标坐标的Transform
 
     void Update()
     {
-        if (target != null)
+        if (target != null &&  GlobalData.Instance.pos_flag)
         {
             // 计算朝向目标的方向向量
             Vector3 direction = target.position - transform.position;
